@@ -1,5 +1,6 @@
 // Movie Quote Generator
 
+//Quotes 
 const quoteArray = [
     "For the time will soon come when Hobbits will shape the fortunes of all.",
     "I would rather share one lifetime with you than face all the Ages of this world alone.",
@@ -16,6 +17,7 @@ const quoteArray = [
     "Never forget what you are. The rest of the world will not. Wear it like armour, and it can never be used to hurt you."
 ];
 
+//Characters
 const characterArray = [
     "Galadriel",
     "Arwen",
@@ -32,6 +34,7 @@ const characterArray = [
     "Tyrion"
 ];
 
+//Movies / TV series
 const movieArray = [
     "The Lord of the Rings: The Fellowship of the Ring",
     "The Lord of the Rings: The Two Towers",
@@ -42,4 +45,20 @@ const movieArray = [
     "Harry Potter and the Order of the Phoenix",
     "A Game of Thrones (TV Series)"
 ];
+
+
+const randomize = arr => {
+    let randomNum = Math.floor(Math.random()*(arr.length));
+    return arr[randomNum];
+};
+
+let randomQuote = randomize(quoteArray);
+let randomCharacter = randomize(characterArray);
+let randomMovie= randomize(movieArray);
+
+
+//The below is for running only in JavaScript. I will however integrate this in HTML to make it look pretty
+let output = `"${randomQuote}" \n \n -${randomCharacter} \n ${randomMovie}`;
+
+console.log(output);
 

@@ -1,15 +1,35 @@
 h1 {
-    color: black;
+    color: rgb(20, 90, 20);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28pt;
  }
 body {
     background-color:rgb(241, 239, 239); 
     color:darkslategray;
 }
 div {
+    margin: 0 auto;
     display: block;
     width: 600px;
     height: 300px;
 }
-p {};
-button {};
-footer {};
+
+#quote {
+    font-family: Papyrus, fantasy;
+    font-size: 16pt;
+    font-weight: bold;
+ }
+ #character {
+     font-weight: bold;
+     font-size: 14pt;
+ }
+ #movie {
+     font-style: italic;
+     font-size: 12pt;
+ }
+button {
+    color: white;
+    font-size: 16pt;
+    background-color: rgb(20, 90, 20);
+    border: 1 px solid black;
+}

@@ -1,6 +1,15 @@
-
-body {};
-h1 {};
+h1 {
+    color: black;
+ }
+body {
+    background-color:rgb(241, 239, 239); 
+    color:darkslategray;
+}
+div {
+    display: block;
+    width: 600px;
+    height: 300px;
+}
 p {};
 button {};
 footer {};
